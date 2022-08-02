@@ -1,0 +1,14 @@
+.offers-flexbox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.offers-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  width: 80%;
+  justify-content: center;
+}

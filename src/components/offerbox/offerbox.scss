@@ -1,0 +1,80 @@
+@import "../../index.scss";
+
+.properties-bg {
+  background-image: url("../images/pic5.jpg");
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-size: 100%;
+}
+
+.box-flex {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.offerbox-container {
+  display: flex;
+  width: 90%;
+  margin-top: 50px;
+  height: 1000px;
+}
+.filter-box {
+  width: 260px;
+  height: 500px;
+  background-color: $primary-gold;
+  display: flex;
+  flex-direction: column;
+  color: $primary-dark;
+  font-size: 17px;
+  padding: 10px;
+  h3 {
+    font-size: 25px;
+  }
+}
+.offers-box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.filter-button {
+  margin-top: 30px;
+  padding: 10px 60px;
+  background-color: $primary-blue;
+  color: white;
+}
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  span {
+    font-size: 15px;
+    padding: 6px 1px;
+  }
+}
+.filter-input {
+  padding: 8px;
+  font-size: 15px;
+}
+.filter-text {
+  padding: 8px;
+  font-size: 15px;
+  border: 1px solid black;
+  background-color: white;
+}
+.rdrCalendarWrapper {
+  position: absolute;
+  font-size: 10px;
+  transform: translateY(220px);
+}
+.filter-options{
+    position: absolute;
+    background: white;
+    transform: translateY(120px);
+    border: solid 1px $primary-blue;
+}
