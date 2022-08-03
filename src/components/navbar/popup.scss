@@ -1,0 +1,59 @@
+@import "../../index.scss";
+
+.dialog-box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    padding: 25px;
+    h1{
+        margin: 5px 0px;
+    }
+    input{
+        padding: 8px 4px;
+        font-size: 16px;
+        margin: 5px 0px;
+        border: 1.5px solid $secondary-blue;
+    }
+    .login-href{
+        color: $primary-dark;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+.login-box{
+    height: 280px;
+}
+.close-btn{
+    position: absolute;
+    right: 0;
+    background-color: white;
+    color: $primary-gold;
+    font-weight: 700;
+    border: 0px;
+    padding: 2px 9px;
+    font-size: 30px;
+    margin: 10px 10px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        transform: rotate(180deg);
+    }
+}
+.register-btn{
+    background-color: $secondary-blue;
+    border: none;
+    padding: 10px 20px;
+    width: fit-content;
+    color: white;
+    font-size: 17px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    align-self: center;
+    &:hover{
+        background-color: $primary-gray;
+    }
+}
+.login-btn{
+    margin-top: 20px;
+}

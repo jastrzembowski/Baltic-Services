@@ -23,10 +23,17 @@ nav ul {
     font-size: 18px;
     color: $primary-blue;
     cursor: pointer;
-
+    
+    .icon{
+      padding-right: 5px;
+    }
     a {
       text-decoration: none;
       color: $primary-blue;
+      transition: 0.2s ease-in-out;
+      &:hover{
+        color: $secondary-blue;
+      }
     }
   }
   .button {
@@ -35,6 +42,11 @@ nav ul {
     margin-left: 3px;
     margin-right: 3px;
     color: white;
+    transition: 0.2s ease-in-out;
     cursor: pointer;
+    border-radius: 3px;
+    &:hover{
+      background-color: $secondary-blue;
+    }
   }
 }

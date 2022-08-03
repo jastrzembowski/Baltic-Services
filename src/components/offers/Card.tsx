@@ -11,18 +11,20 @@ function Card({
   id,
 }: InferProps<typeof Card.propTypes>) {
   return (
-    <div className="card" key={id}>
-      <img src={src} alt="images" />
-      <div className="card__info">
-        <h2>{title}</h2>
-        <h4 className="description">{description}</h4>
-        <h3>{price}zł</h3>
+    
+      <div className="card" key={id}>
+        <Link to={`${id}`}>
+        <img src={src} alt="images" />
+        <div className="card__info">
+          <h2>{title}</h2>
+          <h4 className="description">{description}</h4>
+          <h3>{price}zł</h3>
+        </div>
+          <button className="btn">SZCZEGÓŁY</button>
+        </Link>
+
       </div>
-      <Link to={`${id}`}>
-        <button className="btn">SZCZEGÓŁY</button>
-      </Link>
-    </div>
-  );
+      );
 }
 
 Card.propTypes = {

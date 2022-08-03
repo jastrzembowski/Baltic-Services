@@ -1,8 +1,8 @@
 @import "../../index.scss";
 
 .card {
-  margin: 10px;
-  border-radius: 10px;
+  margin: 0px 10px 20px 10px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,19 +12,25 @@
   align-items: center;
   cursor: pointer;
   width: 30%;
+  background-color: white;
   img {
     object-fit: fill;
     min-width: 300px;
     height: 200px;
     width: 100%;
   };
+  *{
+    text-decoration: none;
+    color: $primary-blue;
+  }
   a{
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .card:hover {
-  transform: scale(1.07);
+  transform: scale(1.06);
 }
 
 .card__info {
@@ -32,12 +38,13 @@
   border-radius: 10px;
   padding: 20px;
   padding-top: 20px;
-  border: 1;
   height: 200px;
+  
   h2 {
     font-size: 18px;
     font-weight: 600;
-  }
+  };
+
 }
 
 .description {
@@ -46,7 +53,14 @@
 }
 
 .btn{
-  padding: 8px 13px;
+  padding: 9px 13px 10px 14px;
+  border: none;
+  transition: 0.2s ease-in-out;
+  border-radius: 5px;
+  cursor:pointer;
   background-color: $primary-blue;
   color: white;
+  &:hover{
+    background-color: $secondary-blue;
+  }
 }

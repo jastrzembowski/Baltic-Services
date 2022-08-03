@@ -32,12 +32,11 @@ function Filter() {
   };
   return (
     <div className="filter-box">
-      <h3>Search</h3>
+      <h3>Wyszukiwarka apartamentów</h3>
       <div className="filter-item">
         <span>
           {" "}
-          <FontAwesomeIcon icon={faBed} className="filter-icon" /> Choose your
-          destination
+          <FontAwesomeIcon icon={faBed} className="filter-icon" /> Cel podróży
         </span>
         <input type="text" placeholder="Destination" className="filter-input" />
       </div>
@@ -45,7 +44,7 @@ function Filter() {
         <span>
           {" "}
           <FontAwesomeIcon icon={faCalendarDays} className="filter-icon" />{" "}
-          Duration of your travel
+          Czas pobytu
         </span>
         <span
           onClick={() => setOpenDate(!openDate)}
@@ -67,20 +66,19 @@ function Filter() {
       <div className="filter-item">
         <span>
           {" "}
-          <FontAwesomeIcon icon={faPerson} className="filter-icon" /> Amount of
-          guests
+          <FontAwesomeIcon icon={faPerson} className="filter-icon" />Liczba gości
         </span>
         <span
           onClick={() => setOpenOptions(!openOptions)}
           className="filter-text"
         >
-          {`${options.adult} adult`} &middot; {`${options.children} children`}{" "}
-          &middot; {`${options.room} room`}
+          {`${options.adult} dorosły`} &middot; {`${options.children} dzieci`}{" "}
+          &middot; {`${options.room} pokój`}
         </span>
         {openOptions && (
           <div className="filter-options">
             <div className="optionItem">
-              <span className="optionText">Adult</span>
+              <span className="optionText">Dorosły</span>
               <div className="optionCounter">
                 <button
                   disabled={options.adult <= 1}
@@ -99,7 +97,7 @@ function Filter() {
               </div>
             </div>
             <div className="optionItem">
-              <span className="optionText">Children</span>
+              <span className="optionText">Dziecko</span>
               <div className="optionCounter">
                 <button
                   disabled={options.children <= 0}
@@ -118,7 +116,7 @@ function Filter() {
               </div>
             </div>
             <div className="optionItem">
-              <span className="optionText">Room</span>
+              <span className="optionText">Pokój</span>
               <div className="optionCounter">
                 <button
                   disabled={options.room <= 1}
@@ -140,7 +138,7 @@ function Filter() {
         )}
       </div>
       <div className="filter-item">
-        <button className="filter-button">Search</button>
+        <button className="filter-button">Szukaj</button>
       </div>
     </div>
   );

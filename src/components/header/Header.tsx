@@ -142,7 +142,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="header-ad"><h1> Apartments by the sea in Poland</h1></div>
+      <div className="header-ad"><h1>Atrakcyjne apartamenty blisko morza</h1></div>
     </>
   );
 }
