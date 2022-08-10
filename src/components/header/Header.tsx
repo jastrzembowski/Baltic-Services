@@ -41,7 +41,7 @@ function Header() {
             <FontAwesomeIcon icon={faBed} className="headerIcon" />
             <input
               type="text"
-              placeholder="Where are you going"
+              placeholder="Where are you going?"
               className="headerSearchInput"
             />
           </div>

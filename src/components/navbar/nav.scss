@@ -50,3 +50,101 @@ nav ul {
     }
   }
 }
+
+nav .menu-btn{
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .menu{
+    position: absolute;
+    opacity: 0;
+    transition: 0.1 ease-in-out;
+    display: block;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+  }
+  .menu-icon{
+    display: block;
+    z-index: 15;
+  }
+
+  nav .menu-icon{
+    cursor: pointer;
+    float: right;
+    padding: 28px 7%;
+    position: relative;
+    user-select: none;
+  }
+  nav .menu-icon .nav-icon{
+    background-color: $primary-blue;
+    display: block;
+    height: 4px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 30px;
+      &:before, &:after{
+            background: white;
+            content: "";
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all ease-out 0.2s;
+            width: 100%;
+      }
+      &:before{
+        top: 9px;
+        background-color: $primary-blue;
+      }
+      &:after{
+        top: -9px;
+        background-color: $primary-blue;
+      }
+  }
+  nav .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+    &:before{
+      transform: rotate(-45deg);
+      top: 0;
+      background-color: $primary-gray;
+    }
+    &::after{
+      transform: rotate(45deg);
+      top: 0;
+      background-color: $primary-gray;
+    }
+  }
+  nav .menu-btn:checked ~ .menu{
+    display: block;
+    opacity: 1;
+    z-index: 17;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    opacity: 1;
+    padding-left: 0px;
+    padding-right: 0px;
+ 
+    li{
+      padding: 10px 10px;
+      border: 1px solid rgba(234, 234, 234, 1);
+      transition: background 0.2s ease-in-out;
+
+      &:hover{
+        background-color: rgba(247, 247, 247, 1);
+      }
+    }
+    .button{
+      margin: 0;
+      border-radius: 0;
+      border: 1px solid rgba(28, 28, 68, 1);
+      transition: background 0.2s ease-in-out;
+      &:hover{
+        background-color: rgba(34, 43, 83, 1);
+      }
+    }
+  }
+}

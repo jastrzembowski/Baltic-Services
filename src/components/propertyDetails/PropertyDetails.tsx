@@ -13,6 +13,7 @@ function PropertyDetails() {
 
   return (
     <>
+      <img src={data[`${y}`].img[1].url} alt="house" className="bg-img"></img>{" "}
       <div className="container">
         <div className="flex-box">
           <div className="head-container">

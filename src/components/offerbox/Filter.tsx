@@ -34,14 +34,14 @@ function Filter() {
     <div className="filter-box">
       <h3>Wyszukiwarka apartamentów</h3>
       <div className="filter-item">
-        <span>
+        <span className="filter-title">
           {" "}
           <FontAwesomeIcon icon={faBed} className="filter-icon" /> Cel podróży
         </span>
-        <input type="text" placeholder="Destination" className="filter-input" />
+        <input type="text" placeholder="Dokąd chcesz jechać?" className="filter-input" />
       </div>
       <div className="filter-item">
-        <span>
+      <span className="filter-title">
           {" "}
           <FontAwesomeIcon icon={faCalendarDays} className="filter-icon" />{" "}
           Czas pobytu
@@ -49,7 +49,7 @@ function Filter() {
         <span
           onClick={() => setOpenDate(!openDate)}
           className="filter-text"
-        >{`${format(date[0].startDate, "dd/MM/yyyy")} to ${format(
+        >{`${format(date[0].startDate, "dd/MM/yyyy")} do ${format(
           date[0].endDate,
           "dd/MM/yyyy"
         )}`}</span>
@@ -64,7 +64,7 @@ function Filter() {
         )}
       </div>
       <div className="filter-item">
-        <span>
+      <span className="filter-title">
           {" "}
           <FontAwesomeIcon icon={faPerson} className="filter-icon" />Liczba gości
         </span>
