@@ -12,7 +12,7 @@ function Card({
 }: InferProps<typeof Card.propTypes>) {
   return (
     <div className="card" key={id}>
-      <Link to={`${id}`}>
+      <Link to={`/properties/${id}`}>
         <img src={src} alt="images" />
         <div className="card__container">
           <div className="card__info">
